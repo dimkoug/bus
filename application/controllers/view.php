@@ -23,9 +23,10 @@ class View extends CI_Controller {
 		#$data['css'].="<link rel=\"stylesheet\" type=\"text/css\" href=\"public/css/map.css\" media=\"screen\" />";
 		#$data['link']="<a href=\"public/view/userview\">Επιλογή Πολυγώνου</a>";
 		#$data['link'].="<a href=\"public/view/lineview\">Επιλογή Διαδρομής</a>";
-		$this->load->view('home/header.php',$data);
+		$this->load->view('common/header.php',$data);
+		$this->load->view('common/nav.php',$data);
 		$this->load->view('home/home.php',$data);
-		$this->load->view('home/footer.php');
+		$this->load->view('common/footer.php');
 	
 	}
 	public function user_loc()
@@ -44,9 +45,10 @@ class View extends CI_Controller {
 		#$data['css'].="<link rel=\"stylesheet\" type=\"text/css\" href=\"public/css/map.css\" media=\"screen\" />";
 		#$data['link']="<a href=\"public/view/userview\">Επιλογή Πολυγώνου</a>";
 		#$data['link'].="<a href=\"public/view/lineview\">Επιλογή Διαδρομής</a>";
-		$this->load->view('user/header.php',$data);
+		$this->load->view('common/header.php',$data);
+		$this->load->view('common/nav.php',$data);
 		$this->load->view('user/user.php',$data);
-		$this->load->view('user/footer.php');
+		$this->load->view('common/footer.php');
 	
 	}
 	
